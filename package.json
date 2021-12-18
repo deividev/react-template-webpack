@@ -1,18 +1,26 @@
 {
-  "name": "react17-webpack5-configuration",
+  "name": "react17-webpack5-template",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "dependencies": {
     "core-js": "^3.9.0",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-redux": "^7.2.5",
+    "redux": "^4.1.1",
+    "rxjs": "^7.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.17",
     "@babel/preset-env": "^7.12.17",
     "@babel/preset-react": "^7.12.13",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.4.3",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.24.0",
+    "axios-observable": "^1.3.0",
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^5.0.2",
