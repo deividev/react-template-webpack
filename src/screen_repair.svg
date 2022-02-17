@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="20px" viewBox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons+Indicators / System-Icons / 00 placeholder / #333333</title>
+    <g id="EDC-595-Solicitar-reparación" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="EDC-595--Postventa---Formulario---Step-4---Resumen" transform="translate(-217.000000, -1572.000000)">
+            <g id="Tabla-precios" transform="translate(211.000000, 1456.000000)">
+                <g id="Screen-Repair" transform="translate(0.000000, 114.000000)">
+                    <polygon id="bg" fill-opacity="0" fill="#D8D8D8" points="0 0 24 0 24 24 0 24"></polygon>
+                    <line x1="10.5" y1="19.5" x2="13.5" y2="19.5" id="Shape" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <path d="M8,21.5 C7.17158,21.5 6.5,20.82842 6.5,20 L6.5,4 C6.5,3.17158 7.17158,2.5 8,2.5 L16,2.5 C16.82842,2.5 17.5,3.17158 17.5,4 L17.5,20 C17.5,20.82842 16.82842,21.5 16,21.5 L8,21.5 Z" id="Shape" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <polyline id="Shape" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" points="16.88 2.785 14.86 6.46125 12.485 7.99875 12 12 10.485 13.51625"></polyline>
+                    <line x1="16" y1="4.4225" x2="10.5125" y2="6.51875" id="Shape" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <line x1="14.86" y1="6.46125" x2="15.4925" y2="10.4925" id="Shape" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

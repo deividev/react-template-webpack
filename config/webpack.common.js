@@ -7,8 +7,9 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "../dist"),
-    filename: "[name].[contenthash].js",
+    filename: "[name]bundle.js",
     publicPath: "",
+    assetModuleFilename: 'images/[hash][ext][query]',
   },
   module: {
     rules: [
@@ -22,7 +23,7 @@ module.exports = {
         test: /\.(css|scss|sass)$/,
       },
       {
-        type: "asset",
+        type: "asset/resource",
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
       },
     ],
