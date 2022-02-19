@@ -1,7 +1,19 @@
 $labelColor: dodgerblue;
 
 .app {
+  font-family: sans-serif;
+  font-size: 1rem;
+  color: white;
+  background-color: dodgerblue;
+  //background: url("http://127.0.0.1:5500/react-template-webpack/dist/css/assets/images/landscape.jpeg") no-repeat; 
+  background-size: cover;
+  height: 100vh;
   label {
     color: $labelColor;
   }
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
 }

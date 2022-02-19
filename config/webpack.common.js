@@ -1,6 +1,8 @@
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
+const json5 = require('json5');
+
 
 
 /** @type {import('webpack').Configuration} */
@@ -10,7 +12,7 @@ module.exports = {
     path: path.resolve(__dirname, "../dist"),
     filename: "[name]bundle.js",
     publicPath: "",
-    assetModuleFilename: 'assets/images/[hash][ext][query]',
+    assetModuleFilename: 'assets/images/[name][ext][query]',
   },
   module: {
     rules: [
@@ -39,6 +41,13 @@ module.exports = {
             }
           }
         ],
+      },
+      {
+        test: /\.json5$/i,
+        type: 'json',
+        parser: {
+          parse: json5.parse,
+        },
       },
     ],
   },

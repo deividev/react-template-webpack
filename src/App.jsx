@@ -1,14 +1,13 @@
 import { useEffect, useState } from "react";
 import logo from "./assets/svg/react.svg";
 import landScape from './assets/images/landscape.jpeg';
-import "./App.css";
 import "./styles/scss/index.scss";
 
 //Services
 import axios from './utils/axios.config.js';
 
 //Mocks
-import {getObservable} from './services/Http.service.js'; 
+import user from './assets/mocks/user.json'; 
 
 function App() {
   const [name, setName] = useState("");
@@ -17,6 +16,7 @@ function App() {
   
   useEffect( () =>{
     getProductList();
+    console.log(user.name);
   });
 
   const getProductList = () => {
