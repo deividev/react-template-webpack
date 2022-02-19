@@ -2,6 +2,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
+
 /** @type {import('webpack').Configuration} */
 module.exports = {
   entry: "./src/index.js",
@@ -22,9 +23,22 @@ module.exports = {
         use: ["style-loader", "css-loader", "sass-loader"],
         test: /\.(css|scss|sass)$/,
       },
+      // {
+      //   type: "asset/resource",
+      //   test: /\.(png|svg|jpg|jpeg|gif)$/i,
+      // },
       {
-        type: "asset/resource",
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(svg)$/i,
+        use:[
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'assets/svg/',
+              publicPath: 'assets/svg/'
+            }
+          }
+        ],
       },
     ],
   },

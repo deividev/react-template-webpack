@@ -3,5 +3,5 @@ export const GLOBAL = Object.freeze({
     PROT: 'http://',
     HOST: window.location.hostname,
     PORT: ':3000',
-    DUMMY: true
+    DUMMY: false
 });

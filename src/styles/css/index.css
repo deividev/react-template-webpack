@@ -7,7 +7,7 @@
   font-family: sans-serif;
   font-size: 1rem;
   color: dodgerblue;
-  /* background: url("./assets/landscape.jpg") no-repeat; */
+  /* background: url("http://127.0.0.1:5500/react-template-webpack/dist/assets/images/landscape.jpg") no-repeat; */
   background-size: cover;
   height: 100vh;
 }

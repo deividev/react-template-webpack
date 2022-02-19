@@ -6,8 +6,9 @@
 .app {
   font-family: sans-serif;
   font-size: 1rem;
-  color: dodgerblue;
-  background: url("./landscape.jpg") no-repeat;
+  color: white;
+  background-color: dodgerblue;
+  /* background: url("./landscape.jpg") no-repeat; */
   background-size: cover;
   height: 100vh;
 }
