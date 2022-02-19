@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import logo from "./assets/svg/react.svg";
+import landScape from './assets/images/landscape.jpeg';
 import "./App.css";
 import "./styles/scss/index.scss";
 
@@ -35,7 +36,7 @@ function App() {
         Hola React 
         <img src={logo} width="25" alt="react logo" />
       </h1>
-      <img src="assets/images/landscape.jpg" alt="" />
+      <img src={landScape} alt="" />
     </div>
   );
 }

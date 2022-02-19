@@ -10,7 +10,7 @@ module.exports = {
     path: path.resolve(__dirname, "../dist"),
     filename: "[name]bundle.js",
     publicPath: "",
-    assetModuleFilename: 'images/[hash][ext][query]',
+    assetModuleFilename: 'assets/images/[hash][ext][query]',
   },
   module: {
     rules: [
@@ -23,10 +23,10 @@ module.exports = {
         use: ["style-loader", "css-loader", "sass-loader"],
         test: /\.(css|scss|sass)$/,
       },
-      // {
-      //   type: "asset/resource",
-      //   test: /\.(png|svg|jpg|jpeg|gif)$/i,
-      // },
+      {
+        test: /\.(png|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+      },
       {
         test: /\.(svg)$/i,
         use:[
