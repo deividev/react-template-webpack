@@ -1,15 +1,36 @@
-$labelColor: dodgerblue;
+//Vars
+:root {
+  --text-primary: rgb(31, 30, 30);
+  --text-primary-dark: rgb(241, 241, 241);
+  --background-primary: rgb(240, 240, 240);
+  --background-primary-dark: rgb(15, 21, 51);
+  --color-primary: rgb(30, 146, 255);
+  --color-primary-dark: rgb(255, 158, 30);
+}
 
 .app {
   font-family: sans-serif;
   font-size: 1rem;
-  color: white;
-  background-color: dodgerblue;
+  color: var(--text-primary);
+  background-color: var(--background-primary);
   //background: url("http://127.0.0.1:5500/react-template-webpack/dist/css/assets/images/landscape.jpeg") no-repeat; 
   background-size: cover;
   height: 100vh;
   label {
-    color: $labelColor;
+    color: var(--color-primary);
+  }
+}
+
+.dark {
+  font-family: sans-serif;
+  font-size: 1rem;
+  color: var(--text-primary-dark);
+  background-color: var(--background-primary-dark);
+  //background: url("http://127.0.0.1:5500/react-template-webpack/dist/css/assets/images/landscape.jpeg") no-repeat; 
+  background-size: cover;
+  height: 100vh;
+  label {
+    color: var(--color-primary-dark);
   }
 }
 
