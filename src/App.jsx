@@ -13,8 +13,6 @@ import user from './assets/mocks/user.json';
 import Button from './components/pure/button.jsx';
 
 function App() {
-  const [name, setName] = useState("");
-  const [products, setProducts] = useState([]);
   const productsLink = 'https://fakestoreapi.com/products';
   const configButtonXs = {
     data: 'Toggle',
@@ -34,8 +32,7 @@ function App() {
   }
   
   useEffect( () =>{
-    getProductList();
-    console.log(user.name);
+   
   });
 
   const toggleModeStyle = () => {
@@ -43,15 +40,6 @@ function App() {
     container.classList.toggle('dark');
   }
 
-  const getProductList = () => {
-          axios.get(productsLink).subscribe(
-              res => {
-                  setProducts(res.data);
-              },
-              error => console.log(error),
-              () => console.log('success')
-          ).unsubscribe();
-  }
   return (
     <div className="app" id="toggleButton">
       {/* <p>{userMocking ? userMocking.name : ""}</p> */}
