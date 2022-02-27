@@ -1,11 +1,20 @@
 //Vars
 :root {
+  --red-primary: #A2242F;
+  --red-secondary: #6A2E2A;
+  --blue-primary: #0F4C81;
+  --sandstone-primary: #C48A69;
+  --amberglow-primary: #DC793D;
+  --almond-oil-primary: #F4E4C1;
+
   --text-primary: rgb(31, 30, 30);
   --text-primary-dark: rgb(241, 241, 241);
   --background-primary: rgb(240, 240, 240);
   --background-primary-dark: rgb(15, 21, 51);
-  --color-primary: rgb(30, 146, 255);
+  --color-primary: var(--blue-primary);
   --color-primary-dark: rgb(255, 158, 30);
+
+
 }
 
 .app {
@@ -37,4 +46,18 @@
 * {
   margin: 0;
   box-sizing: border-box;
+}
+
+
+.primary {
+  color: var(--color-primary);
+}
+
+.secondary {
+  color: var(--color-primary-dark);
+}
+
+.terciary {
+  background-color: var(--red-primary);
+  color: var(--text-primary-dark);
 }
