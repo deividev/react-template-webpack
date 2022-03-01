@@ -13,41 +13,44 @@ class Ui extends Component {
 			direction: 'row-reverse',
 			data: 'Toggle',
 			icon: logo,
-			classIcon: 'icon-reverse'
+			marginIcon: 'icon-reverse'
 		};
 		this.configButtonSecondary = {
 			direction: 'row',
 			data: 'Success',
 			icon: logo,
-			classIcon: 'icon'
+			marginIcon: 'icon'
 		}
 		this.configButtonTerciary = {
 			direction: 'row',
 			data: 'Errorrrrrrrrrrrrrrrrrrrrr',
 			icon: logo,
-			classIcon: 'icon'
+			marginIcon: 'icon'
 		}
+		this.configButtonLiteral = {
+			direction: 'direction: row-reverse (para situar icono al principio)',
+			data: 'data: Texto a mostrar en el button',
+			icon: 'icon: url donde esta situado el .svg',
+			marginIcon: 'marginIcon: icon-reverse (marginRigth 5px;) icon (marginLeft 5px)'
+		};
 		this.primaryClass = 'btn-primary';
-  }
-
-		
-
-  setConfig() {
-    const button = document.querySelector("button");
-    for (const key in this.config) {
-      button.style.key = this.config.key;
-    }
-  }
-
-  componentDidMount() {
-    //this.setConfig();
   }
 
   render() {
     return (
       <div>
         <div>
-			<p>Buttons</p>
+			<h3>Buttons</h3>
+			<div>
+				config 
+					<p>{this.configButtonLiteral.direction}</p>
+					<p>{this.configButtonLiteral.data}</p>
+					<p>{this.configButtonLiteral.icon}</p>
+					<p>{this.configButtonLiteral.marginIcon}</p>
+				className = <span>"btn--secondary" por ej </span>
+					
+					<Button className={'btn-secondary'} config={this.configButtonSecondary}></Button>
+			</div>
 			<div  className="flex">
 				<Button className={this.primaryClass} config={this.configButtonPrimary}></Button>
 				<Button className={'btn-secondary'} config={this.configButtonSecondary}></Button>

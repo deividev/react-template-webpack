@@ -8,7 +8,7 @@ class Button extends Component {
 		super(props)
 		this.config = props?.config;
 		this.className= this.config.direction !== 'row-reverse' ? props?.className : this.className= props?.className + '--reverse';
-		this.config.classIcon = this.config.classIcon === 'icon' ? {marginLeft: 10} : {marginRight: 10};
+		this.config.marginIcon = this.config.marginIcon === 'icon' ? {marginLeft: 10} : {marginRight: 10};
 		
 	}
 	
@@ -33,7 +33,7 @@ class Button extends Component {
 		return (
 			<button className={this.className}>
 				{this.config.data}
-				{this.config.icon && <img src={this.config.icon}  width="25px" height="25px" style={this.config.classIcon} alt="" />}
+				{this.config.icon && <img src={this.config.icon}  width="25px" height="25px" style={this.config.marginIcon} alt="" />}
 			</button>
 		)
 	}
