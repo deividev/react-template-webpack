@@ -1,20 +1,20 @@
 //Vars
 :root {
-  --red-primary: #A2242F;
-  --red-secondary: #6A2E2A;
-  --blue-primary: #0F4C81;
-  --sandstone-primary: #C48A69;
-  --amberglow-primary: #DC793D;
-  --almond-oil-primary: #F4E4C1;
+  --red-primary: #a2242f;
+  --red-secondary: #6a2e2a;
+  --blue-primary: #0f4c81;
+  --sandstone-primary: #c48a69;
+  --amberglow-primary: #dc793d;
+  --almond-oil-primary: #f4e4c1;
 
   --text-primary: rgb(31, 30, 30);
   --text-primary-dark: rgb(241, 241, 241);
   --background-primary: rgb(240, 240, 240);
-  --background-primary-dark: rgb(15, 21, 51);
+  --background-primary-dark: #263056;
   --color-primary: var(--blue-primary);
   --color-primary-dark: rgb(255, 158, 30);
 
-
+  --font-primary: font-family: sans-serif;
 }
 
 .app {
@@ -22,7 +22,7 @@
   font-size: 1rem;
   color: var(--text-primary);
   background-color: var(--background-primary);
-  //background: url("http://127.0.0.1:5500/react-template-webpack/dist/css/assets/images/landscape.jpeg") no-repeat; 
+  //background: url("http://127.0.0.1:5500/react-template-webpack/dist/css/assets/images/landscape.jpeg") no-repeat;
   background-size: cover;
   height: 100vh;
   label {
@@ -35,7 +35,7 @@
   font-size: 1rem;
   color: var(--text-primary-dark);
   background-color: var(--background-primary-dark);
-  //background: url("http://127.0.0.1:5500/react-template-webpack/dist/css/assets/images/landscape.jpeg") no-repeat; 
+  //background: url("http://127.0.0.1:5500/react-template-webpack/dist/css/assets/images/landscape.jpeg") no-repeat;
   background-size: cover;
   height: 100vh;
   label {
@@ -43,11 +43,11 @@
   }
 }
 
+
 * {
   margin: 0;
   box-sizing: border-box;
 }
-
 
 .primary {
   color: var(--color-primary);
@@ -60,4 +60,11 @@
 .terciary {
   background-color: var(--red-primary);
   color: var(--text-primary-dark);
+}
+
+//Flex-box
+
+.flex {
+  display: flex;
+  align-items: center;
 }

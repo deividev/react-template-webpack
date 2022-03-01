@@ -1,7 +1,95 @@
 
-.button {
+.icon {
+    margin-left: 5px;
+}
+
+.icon-reverse {
+    margin-right: 5px;
+}
+
+.btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-}
+    font-size: 1em;
+    margin: 1em;
+    padding: 0.25em 1em;
+    border-radius: 3px;
+  
+    &-primary {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid var(--blue-primary);
+      color: var(--text-primary-dark);
+      background-color: var(--blue-primary);
+      font-size: 1em;
+      font-family: var(--font-primary);
+      margin: 1em;
+      padding: 0.25em 1em;
+      border-radius: 3px;
+      &--reverse {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        border: 2px solid var(--blue-primary);
+        color: var(--text-primary-dark);
+        background-color: var(--blue-primary);
+        font-size: 1em;
+        font-family: var(--font-primary);
+        margin: 1em;
+        padding: 0.25em 1em;
+        border-radius: 3px;
+      }
+    }
+  
+    &-secondary {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid var(--red-primary);
+      color: var(--text-primary-dark);
+      background-color: var(--red-primary);
+      font-size: 1em;
+      margin: 1em;
+      padding: 0.25em 1em;
+      border-radius: 3px;
+      &--reverse {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        border: 2px solid var(--red-primary);
+        color: var(--text-primary-dark);
+        background-color: var(--red-primary);
+        font-size: 1em;
+        margin: 1em;
+        padding: 0.25em 1em;
+        border-radius: 3px;
+      }
+    }
+  
+    &-terciary {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid var(--color-primary-dark);
+      color: var(--text-primary);
+      background-color: var(--color-primary-dark);
+      font-size: 1em;
+      margin: 1em;
+      padding: 0.25em 1em;
+      border-radius: 3px;
+      &--reverse {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        border: 2px solid var(--color-primary-dark);
+        color: var(--text-primary);
+        background-color: var(--color-primary-dark);
+        font-size: 1em;
+        margin: 1em;
+        padding: 0.25em 1em;
+        border-radius: 3px;
+      }
+    }
+  }

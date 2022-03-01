@@ -4,24 +4,26 @@ import button from './button.scss';
 
 
 class Button extends Component {
-	constructor(props) {
+	constructor(props) {	
 		super(props)
-		this.config = props.props;
+		this.config = props?.config;
+		this.className= this.config.direction !== 'row-reverse' ? props?.className : this.className= props?.className + '--reverse';
+		this.config.classIcon = this.config.classIcon === 'icon' ? {marginLeft: 10} : {marginRight: 10};
+		
 	}
 	
 	
-	setConfig() {
-		const button = document.querySelector('button');
-		button.style.color = this.config.color;
-		button.style.border = this.config.border;
-		button.style.borderRadius = this.config.borderRadius;
-		button.style.backgroundColor = this.config.backgroundColor;
-	}
+		// setConfig() {
+		// 	const button = document.querySelector('button');
+		// 	Object.entries(this.config.configCss).forEach(([key, value]) => {
+		// 		button.style.key = value;
+		// 	});
+		// }
 
 
 	componentDidMount() {
-		this.setConfig();
-  }
+		//this.setConfig();
+  	}
 
 	componentWillMount() {
 
@@ -29,17 +31,13 @@ class Button extends Component {
 
 	render() {
 		return (
-			<button className='button'>
+			<button className={this.className}>
 				{this.config.data}
-				{this.config.icon && <img src={this.config.icon} width="25px" height="25px" alt="" />}
+				{this.config.icon && <img src={this.config.icon}  width="25px" height="25px" style={this.config.classIcon} alt="" />}
 			</button>
 		)
 	}
 }
 
-Button.propTypes = {
-
-}
-
-export default Button
+export default Button;
 
