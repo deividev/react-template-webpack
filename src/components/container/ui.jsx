@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import landScape from '../../assets/images/landScape.jpeg';
 import logo from "../../assets/svg/react.svg";
 
 //components
-import Button from "../pure/button.jsx"
+import Button from "../pure/button.jsx";
+import TextUi from "./textUi.jsx"
 
 
 class Ui extends Component {
@@ -40,6 +40,7 @@ class Ui extends Component {
     return (
       <div>
         <div>
+			<TextUi />
 			<h3>Buttons</h3>
 			<div>
 				config 
@@ -49,7 +50,7 @@ class Ui extends Component {
 					<p>{this.configButtonLiteral.marginIcon}</p>
 				className = <span>"btn--secondary" por ej </span>
 					
-					<Button className={'btn-secondary'} config={this.configButtonSecondary}></Button>
+				<Button className={'btn-secondary'} config={this.configButtonSecondary}></Button>
 			</div>
 			<div  className="flex">
 				<Button className={this.primaryClass} config={this.configButtonPrimary}></Button>

@@ -18,7 +18,7 @@
 }
 
 .app {
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   color: var(--text-primary);
   background-color: var(--background-primary);
@@ -27,6 +27,13 @@
   height: 100vh;
   label {
     color: var(--color-primary);
+  }
+
+  .text-ligth {
+    font-weight: 300;
+  }
+  .text-bold {
+    font-weight: 700;
   }
 }
 
@@ -67,4 +74,11 @@
 .flex {
   display: flex;
   align-items: center;
+}
+
+
+//Utils 
+
+.separator {
+  border: 1px solid var(--text-primary);
 }
